@@ -8,6 +8,7 @@ import io.micronaut.http.annotation.Post
 import models.CreateOrderInput
 import models.DataStorage
 import services.Validations
+import validations.RequestValidations
 import validations.UserValidations
 
 @Controller("/user")
@@ -23,19 +24,10 @@ class OrderController {
             return HttpResponse.status<Any>(HttpStatus.UNAUTHORIZED).body(response)
 
 
-        if (body.orderType.isNullOrBlank())
-            errorMessages.add("orderType is missing, orderType should be BUY or SELL.")
-        if (body.price == null)
-            errorMessages.add("price for the order is missing.")
-        if (body.quantity == null)
-            errorMessages.add("quantity field for order is missing.")
-        if (body.orderType != null && body.orderType == "SELL" && body.esopType.isNullOrBlank()) {
-            errorMessages.add("esopType is missing, SELL order requires esopType.")
-        }
-        if (errorMessages.isNotEmpty()) {
-            response = mapOf("error" to errorMessages)
+        response=RequestValidations.fieldsMissingInBodyOfOrderReq(body)
+        if(response!=null)
             return HttpResponse.status<Any>(HttpStatus.UNAUTHORIZED).body(response)
-        }
+
 
         //Input Parsing
         val orderQuantity: Long? = body.quantity?.toLong()

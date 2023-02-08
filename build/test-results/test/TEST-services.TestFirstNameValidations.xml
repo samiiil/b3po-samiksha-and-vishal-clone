@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="services.TestFirstNameValidations" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-02-08T07:59:55" hostname="Samikshas-MacBook-Pro.local" time="0.002">
+<testsuite name="services.TestFirstNameValidations" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-02-08T08:30:54" hostname="Samikshas-MacBook-Pro.local" time="0.003">
   <properties/>
   <testcase name="first name can contain mark characters()" classname="services.TestFirstNameValidations" time="0.001"/>
   <testcase name="should accept first name with spaces()" classname="services.TestFirstNameValidations" time="0.0"/>
-  <testcase name="first name cannot contain continuous spaces()" classname="services.TestFirstNameValidations" time="0.0"/>
+  <testcase name="first name cannot contain continuous spaces()" classname="services.TestFirstNameValidations" time="0.001"/>
   <testcase name="first name cannot be null()" classname="services.TestFirstNameValidations" time="0.0"/>
   <testcase name="first name cannot be less than three characters()" classname="services.TestFirstNameValidations" time="0.0"/>
   <testcase name="first name can contain other languages()" classname="services.TestFirstNameValidations" time="0.0"/>

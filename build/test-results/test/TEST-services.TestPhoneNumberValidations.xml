@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="services.TestPhoneNumberValidations" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-02-08T07:59:55" hostname="Samikshas-MacBook-Pro.local" time="0.004">
+<testsuite name="services.TestPhoneNumberValidations" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-02-08T08:30:54" hostname="Samikshas-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="should return error if country code has characters other than + and digit()" classname="services.TestPhoneNumberValidations" time="0.001"/>
+  <testcase name="should return error if country code has characters other than + and digit()" classname="services.TestPhoneNumberValidations" time="0.0"/>
   <testcase name="should return error if country code is wrong but number is valid()" classname="services.TestPhoneNumberValidations" time="0.0"/>
   <testcase name="should accept 13 digit phone number()" classname="services.TestPhoneNumberValidations" time="0.0"/>
   <testcase name="should accept 14 digit phone number ()" classname="services.TestPhoneNumberValidations" time="0.0"/>
   <testcase name="should not accept phone number more than 14 digit()" classname="services.TestPhoneNumberValidations" time="0.0"/>
   <testcase name="should accept 12 digit phone number()" classname="services.TestPhoneNumberValidations" time="0.0"/>
-  <testcase name="should not accept phone number less than 10 digit()" classname="services.TestPhoneNumberValidations" time="0.0"/>
+  <testcase name="should not accept phone number less than 10 digit()" classname="services.TestPhoneNumberValidations" time="0.001"/>
   <testcase name="should accept 11 digit phone number()" classname="services.TestPhoneNumberValidations" time="0.0"/>
   <testcase name="return error for trunk code()" classname="services.TestPhoneNumberValidations" time="0.0"/>
-  <testcase name="should accept 10 digit phone number()" classname="services.TestPhoneNumberValidations" time="0.0"/>
+  <testcase name="should accept 10 digit phone number()" classname="services.TestPhoneNumberValidations" time="0.001"/>
   <testcase name="should return error if there are characters in phone number()" classname="services.TestPhoneNumberValidations" time="0.0"/>
   <testcase name="should fail if it's 11 digit and first digit is non-zero()" classname="services.TestPhoneNumberValidations" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
