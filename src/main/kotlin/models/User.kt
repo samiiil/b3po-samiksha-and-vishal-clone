@@ -25,7 +25,6 @@ class User(
         } else if (orderType == "SELL") {
             addSellOrder(orderQuantity, orderPrice, typeOfESOP)
         }
-
         Util.matchOrders()
     }
 

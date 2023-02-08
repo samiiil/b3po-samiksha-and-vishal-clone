@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="models.TestUserRegistration" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-02-08T08:30:54" hostname="Samikshas-MacBook-Pro.local" time="0.002">
+<testsuite name="models.TestUserRegistration" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-02-08T10:10:06" hostname="Samikshas-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="can create multiple users()" classname="models.TestUserRegistration" time="0.0"/>
+  <testcase name="can create multiple users()" classname="models.TestUserRegistration" time="0.001"/>
   <testcase name="user wallet and inventory are initially empty()" classname="models.TestUserRegistration" time="0.0"/>
-  <testcase name="can add money to wallet()" classname="models.TestUserRegistration" time="0.001"/>
+  <testcase name="can add money to wallet()" classname="models.TestUserRegistration" time="0.0"/>
   <testcase name="can add performance ESOPs to inventory()" classname="models.TestUserRegistration" time="0.0"/>
   <testcase name="can create new valid user()" classname="models.TestUserRegistration" time="0.0"/>
   <testcase name="user email added to registered email list()" classname="models.TestUserRegistration" time="0.0"/>

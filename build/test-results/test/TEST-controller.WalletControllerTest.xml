@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="controller.WalletControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-08T08:30:54" hostname="Samikshas-MacBook-Pro.local" time="0.036">
+<testsuite name="controller.WalletControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-08T10:10:06" hostname="Samikshas-MacBook-Pro.local" time="0.033">
   <properties/>
-  <testcase name="shouldBeAbleToAddAmount()" classname="controller.WalletControllerTest" time="0.019"/>
-  <testcase name="shouldNotBeAbleToAddNegativeAmount()" classname="controller.WalletControllerTest" time="0.008"/>
+  <testcase name="shouldBeAbleToAddAmount()" classname="controller.WalletControllerTest" time="0.016"/>
+  <testcase name="shouldNotBeAbleToAddNegativeAmount()" classname="controller.WalletControllerTest" time="0.007"/>
   <testcase name="shouldNotAbleToAddMoreAmountThanSetLimit()" classname="controller.WalletControllerTest" time="0.004"/>
-  <testcase name="shouldNotAbleToAddAmountForInvalidUser()" classname="controller.WalletControllerTest" time="0.004"/>
-  <system-out><![CDATA[?[36m14:00:54.438?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+  <testcase name="shouldNotAbleToAddAmountForInvalidUser()" classname="controller.WalletControllerTest" time="0.005"/>
+  <system-out><![CDATA[?[36m15:40:06.705?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

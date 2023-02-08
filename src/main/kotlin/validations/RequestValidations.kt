@@ -8,11 +8,30 @@ class RequestValidations {
 
     companion object {
 
-        fun fieldsMissingInBodyOfOrderReq(body: CreateOrderInput): Map<String, *>? {
+        fun checkIfRequestIsValid(body: CreateOrderInput): Map<String, ArrayList<String>>? {
+
+            var response: Map<String, ArrayList<String>>?
+
+            response= checkIfFieldsMissingInOrderReq(body)
+
+            if(response!=null)
+                return response
+
+            response= checkIfOrderRequestDataIsValid(body)
+            if(response!=null)
+                return response
+
+            return null
+        }
+
+
+
+
+        fun checkIfFieldsMissingInOrderReq(body: CreateOrderInput): Map<String, ArrayList<String>>? {
 
             val errorMessages: ArrayList<String> = ArrayList()
 
-            var response: Map<String, *>?
+            var response: Map<String, ArrayList<String>>?
 
             if (body.orderType.isNullOrBlank())
                 errorMessages.add("orderType is missing, orderType should be BUY or SELL.")
@@ -30,5 +49,42 @@ class RequestValidations {
             }
             return null
         }
+
+
+        fun checkIfOrderRequestDataIsValid(body: CreateOrderInput): Map<String, ArrayList<String>>? {
+
+            val errorMessages: ArrayList<String> = ArrayList()
+            var response: Map<String, ArrayList<String>>?
+
+            errorMessages.addAll(isOrderTypeValid(body.orderType!!))
+
+            if(body.esopType!=null)
+                errorMessages.addAll(isESOPTypeValid(body.esopType))
+
+
+
+            if (errorMessages.isNotEmpty()) {
+                response = mapOf("error" to errorMessages)
+                return response
+            }
+            return null
+        }
+
+
+        fun isOrderTypeValid(orderType : String): ArrayList<String> {
+            val errorMessages: ArrayList<String> = ArrayList()
+            if (orderType !in arrayOf("BUY", "SELL"))
+                errorMessages.add("Invalid order type.")
+            return errorMessages
+        }
+
+        fun isESOPTypeValid(typeOfESOP : String): ArrayList<String> {
+            val errorMessages: ArrayList<String> = ArrayList()
+            if (typeOfESOP !in arrayOf("PERFORMANCE", "NON-PERFORMANCE"))
+                errorMessages.add("Invalid type of ESOP, ESOP type should be PERFORMANCE or NON-PERFORMANCE.")
+            return errorMessages
+        }
+
+
     }
 }
