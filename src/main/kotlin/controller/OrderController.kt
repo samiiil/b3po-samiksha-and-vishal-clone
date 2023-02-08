@@ -1,13 +1,13 @@
 package controller
 
+import Services.OrderServices
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.HttpStatus
 import io.micronaut.http.annotation.Body
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Post
 import models.CreateOrderInput
-import models.DataStorage
-import services.Validations
+
 import validations.RequestValidations
 import validations.UserValidations
 
@@ -21,7 +21,6 @@ class OrderController {
         if (response != null)
             return HttpResponse.status<Any>(HttpStatus.UNAUTHORIZED).body(response)
 
-
         response = RequestValidations.checkIfRequestIsValid(body)
         if (response != null)
             return HttpResponse.status<Any>(HttpStatus.UNAUTHORIZED).body(response)
@@ -31,18 +30,9 @@ class OrderController {
         val orderPrice: Long = body.price!!.toLong()
         val typeOfESOP: String = (body.esopType ?: "NON-PERFORMANCE").trim().uppercase()
 
+        response=OrderServices.placeOrder(userName,orderQuantity,orderType,orderPrice,typeOfESOP)
 
-        //Create Order
-        DataStorage.userList[userName]!!.addOrderToExecutionQueue(orderQuantity, orderType, orderPrice, typeOfESOP)
-
-        val res = mutableMapOf<String, Any>()
-        res["quantity"] = orderQuantity
-        res["order_type"] = orderType
-        res["price"] = orderPrice
-
-        return HttpResponse.status<Any>(HttpStatus.OK).body(res)
-
-
+        return HttpResponse.status<Any>(HttpStatus.OK).body(response)
     }
 
 }

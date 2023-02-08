@@ -30,6 +30,9 @@ class DataStorage {
         }
 
 
+        fun getUser(userName: String): User? {
+            return userList[userName]
+        }
     }
 
 
