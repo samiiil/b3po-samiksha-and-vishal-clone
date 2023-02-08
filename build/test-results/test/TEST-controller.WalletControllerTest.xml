@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="controller.WalletControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-08T06:55:46" hostname="Samikshas-MacBook-Pro.local" time="0.041">
+<testsuite name="controller.WalletControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-08T07:59:55" hostname="Samikshas-MacBook-Pro.local" time="0.037">
   <properties/>
-  <testcase name="shouldBeAbleToAddAmount()" classname="controller.WalletControllerTest" time="0.019"/>
-  <testcase name="shouldNotBeAbleToAddNegativeAmount()" classname="controller.WalletControllerTest" time="0.008"/>
-  <testcase name="shouldNotAbleToAddMoreAmountThanSetLimit()" classname="controller.WalletControllerTest" time="0.007"/>
+  <testcase name="shouldBeAbleToAddAmount()" classname="controller.WalletControllerTest" time="0.017"/>
+  <testcase name="shouldNotBeAbleToAddNegativeAmount()" classname="controller.WalletControllerTest" time="0.007"/>
+  <testcase name="shouldNotAbleToAddMoreAmountThanSetLimit()" classname="controller.WalletControllerTest" time="0.004"/>
   <testcase name="shouldNotAbleToAddAmountForInvalidUser()" classname="controller.WalletControllerTest" time="0.006"/>
-  <system-out><![CDATA[?[36m12:25:46.509?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+  <system-out><![CDATA[?[36m13:29:55.732?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

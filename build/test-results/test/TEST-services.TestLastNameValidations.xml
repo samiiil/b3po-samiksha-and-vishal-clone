@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="services.TestLastNameValidations" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-02-08T06:55:46" hostname="Samikshas-MacBook-Pro.local" time="0.003">
+<testsuite name="services.TestLastNameValidations" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-02-08T07:59:55" hostname="Samikshas-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="last name cannot contain digits()" classname="services.TestLastNameValidations" time="0.001"/>
+  <testcase name="last name cannot contain digits()" classname="services.TestLastNameValidations" time="0.0"/>
   <testcase name="last name cannot be null()" classname="services.TestLastNameValidations" time="0.0"/>
   <testcase name="last name cannot contain continuous spaces()" classname="services.TestLastNameValidations" time="0.001"/>
-  <testcase name="last name should contain at least one character()" classname="services.TestLastNameValidations" time="0.0"/>
+  <testcase name="last name should contain at least one character()" classname="services.TestLastNameValidations" time="0.001"/>
   <testcase name="should accept last name with spaces()" classname="services.TestLastNameValidations" time="0.0"/>
   <testcase name="last name can contain mark characters()" classname="services.TestLastNameValidations" time="0.0"/>
   <testcase name="last name can contain other languages()" classname="services.TestLastNameValidations" time="0.0"/>

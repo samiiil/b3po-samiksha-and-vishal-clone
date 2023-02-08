@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="controller.TestErrorHandling" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-08T06:55:46" hostname="Samikshas-MacBook-Pro.local" time="0.339">
+<testsuite name="controller.TestErrorHandling" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-02-08T07:59:55" hostname="Samikshas-MacBook-Pro.local" time="0.347">
   <properties/>
-  <testcase name="should not accept empty post body()" classname="controller.TestErrorHandling" time="0.309"/>
+  <testcase name="should not accept empty post body()" classname="controller.TestErrorHandling" time="0.317"/>
   <testcase name="should send Http 405 when using get method for user registration()" classname="controller.TestErrorHandling" time="0.01"/>
-  <testcase name="should send invalid json when malformed json request is sent()" classname="controller.TestErrorHandling" time="0.013"/>
+  <testcase name="should send invalid json when malformed json request is sent()" classname="controller.TestErrorHandling" time="0.014"/>
   <testcase name="should get Http 404 for invalid route()" classname="controller.TestErrorHandling" time="0.005"/>
-  <system-out><![CDATA[?[36m12:25:45.562?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+  <system-out><![CDATA[?[36m13:29:54.801?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="controller.UserControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-08T06:55:46" hostname="Samikshas-MacBook-Pro.local" time="0.042">
+<testsuite name="controller.UserControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-08T07:59:55" hostname="Samikshas-MacBook-Pro.local" time="0.041">
   <properties/>
-  <testcase name="shouldThrowErrorsForInvalidUser()" classname="controller.UserControllerTest" time="0.029"/>
+  <testcase name="shouldThrowErrorsForInvalidUser()" classname="controller.UserControllerTest" time="0.028"/>
   <testcase name="shouldRegisterAValidUser()" classname="controller.UserControllerTest" time="0.012"/>
   <testcase name="registerNewUserWhileOtherUsersExist()" classname="controller.UserControllerTest" time="0.001"/>
-  <system-out><![CDATA[?[36m12:25:46.441?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+  <system-out><![CDATA[?[36m13:29:55.664?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
