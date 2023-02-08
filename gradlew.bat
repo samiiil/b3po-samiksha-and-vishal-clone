@@ -1,7 +1,7 @@
 @rem
 @rem Copyright 2015 the original author or authors.
 @rem
-@rem Licensed under the Apache License, Version 2.0 (the "License")
+@rem Licensed under the Apache License, Version 2.0 (the "License");
 @rem you may not use this file except in compliance with the License.
 @rem You may obtain a copy of the License at
 @rem
@@ -26,6 +26,7 @@ if "%OS%"=="Windows_NT" setlocal
 
 set DIRNAME=%~dp0
 if "%DIRNAME%"=="" set DIRNAME=.
+@rem This is normally unused
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 
